@@ -1,0 +1,963 @@
+:root{
+    --orange-color:#fa7436;
+}
+
+/* universal selector */
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+
+.wrapper{
+    max-width: 1134px;
+    margin: 0 auto;
+} 
+
+.btn{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #fff;
+    display: inline-block; 
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    
+    
+
+}
+
+.btn.dark{
+    background: var( --orange-color);
+
+    
+    
+}
+
+.btn.color{
+   color:var(--orange-color) ;
+
+
+
+}
+
+
+.btn.orenge{
+    color:var(--orange-color) ;
+
+}
+
+.btn.Expolore{
+    background-color: var(--orange-color);
+}
+
+.btn.line{
+    color: #fa7436;
+    font-size: xx-large;
+}
+
+
+
+
+/* Header */
+
+header{
+    background: #fefcfb;
+    height: 100vh;
+    width:100% ; 
+}
+
+/* nav bar */
+
+ nav{
+    display: flex;
+     justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    width: 1170px;
+    height: 50px;
+    top: 0;
+    padding: 40px 0;
+    z-index: 0; 
+    margin: 12px;
+    gap: 10px;
+    
+} 
+
+nav .logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    
+}
+
+nav ul a{
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    text-decoration: none; 
+    
+}
+
+nav ul .file{
+    width: 386px;
+    height: 24px;
+    display: flex;
+    gap: 25px;
+
+    
+}
+
+
+/* hero section */
+
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 200px;
+    position: relative;
+    color: #fff;
+}
+
+
+.hero-section .left h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    margin-bottom: 50px;
+    margin-left: 350px;
+    color: black;
+
+
+
+}
+
+
+
+.hero-section .left p{
+     margin-left: 350px;
+     margin-bottom: 300px;
+     margin-top: 60px;
+     color: black;
+
+}
+
+.hero-section .left a{
+    padding: 20px;
+}
+
+.point h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #fa7436;
+    position: absolute;
+    left: 560px;
+    bottom: 420px;
+
+
+}
+
+
+
+.discover-now{
+    color: var(--orange-color);
+    position: absolute;
+    padding: 20px;
+    font-family: 'poppins' sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-color: #fa7436;
+    display: flex;
+    left: 350px;
+    bottom: 190px;
+    background: #fff;
+
+}
+
+
+     
+
+
+
+.Aeroplain{
+    position: absolute; 
+    display: flex;
+    padding: 30px;
+    left: 900px;
+    bottom: 450px;
+}
+
+.hero img{
+    width: 450px;
+    height: 500px;
+    position: absolute; 
+    display: flex;
+    padding: 30px;
+    left: 1060px;
+    bottom: 135px;
+
+}
+
+
+
+
+/* <!-- center section --> */
+
+
+
+
+
+.center-section{
+    width: 950px;
+    height: 100px; 
+    position: absolute;
+    gap: 30px;
+    bottom: 20px;
+    left: 500px;
+    background: #fff;
+    
+
+    
+}
+
+.center-section .arrow{
+    display:flex;
+    gap: 100px;
+    list-style: none;
+    
+    
+}
+
+
+.center-section .arrow a{
+    color: black;
+    font-weight: 600;
+
+}
+
+
+.center-section .box a{
+    color: #fff;
+    
+}
+
+
+
+/* <!-- Tropy --> */
+
+.Tropy .content{
+    position: absolute;
+    display: flex;
+    height: 50px;
+    width: 150px;
+    align-items: center;
+    bottom:480px;
+    left: 1000px;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 12px;
+    
+}  
+
+
+.content h2{
+    font-size: medium;
+    font-weight: 400;
+    color: black;
+    
+
+} 
+
+.google-map .content{
+    position: absolute;
+    display: flex;
+    height: 80px;
+    width: 150px;
+    align-items: center;
+    bottom:350px;
+    left: 1340px;
+    gap: 5px;
+    background-color: #ffffff;
+    
+}
+
+.content p{
+    font-size: small;
+}
+
+
+.star .content{
+    position: absolute;
+    display: flex;
+    height: 70px;
+    width: 180px;
+    align-items: center;
+    bottom:290px;
+    left: 1040px;
+    gap: 5px;
+    background-color: #ffffff;
+}
+
+
+/* <!-- Things-section --> */
+
+.Things-section{
+    background: #f7f8fc;
+    height: 85vh;
+    width:100%;
+
+
+       
+}
+
+.Things-section .second h2{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 590px;
+    top: 900px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    
+
+}
+
+.Things-section .second p{
+    position: absolute; 
+    display: flex; 
+    height: 64px;
+    width: 482px;
+    align-items: center;
+    justify-content: center;
+    left: 665px;
+    top: 975px;
+    font-family: "poppins",sans-serif;
+    font-size: small;
+    color:#666666;
+    
+    
+}
+
+.todo{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 790px;
+    top: 930px;
+    font-family: "ralwey",sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    color: #fa7436;
+}
+
+.aero2{
+    display: flex;
+    position: absolute;
+    left: 1200px;
+    top: 940px;
+} 
+
+.box-container .sign{
+    position: absolute;
+    padding: 30px;
+    height: 240px;
+    width: 350px;
+    left: 380px;
+    top: 1120px;
+    background: #ffffff;
+
+}
+
+.box-container .money{
+    position: absolute;
+    padding: 30px;
+    height: 240px;
+    width: 350px;
+    left: 770px;
+    top: 1120px;
+    background: #ffffff;
+}
+
+
+.box-container .travel{
+    position: absolute;
+    padding: 30px;
+    height: 240px;
+    width: 350px;
+    left: 1150px;
+    top: 1120px;
+    background: #ffffff;
+}
+
+
+.code1 img{
+    position: absolute;
+    padding: 30px;
+    height: 300px;
+    width: 410px;
+    left: 350px;
+    top: 1090px;
+    
+}
+
+.code2 img{
+    position: absolute;
+    padding: 30px;
+    height: 310px;
+    width: 435px;
+    left: 718px;
+    top: 1080px;
+}
+
+.code3 img{
+    position: absolute;
+    padding: 30px;
+    height: 300px;
+    width: 410px;
+    left: 1120px;
+    top: 1090px;
+
+}
+
+/* <!-- Exclusive-section --> */
+
+
+.exclusive-section{
+    background:#FEFCFB;
+    height: 100vh;
+    width:100%;
+
+}
+
+.exclusive-section .exclusive h1{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 500px;
+    top: 1600px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.exclusive-section .exclusive p{
+    position: absolute; 
+    display: flex; 
+    height: 64px;
+    width: 482px;
+    align-items: center;
+    justify-content: center;
+    left: 665px;
+    top: 1665px;
+    font-family: "poppins",sans-serif;
+    font-size: small;
+    color:#666666;
+}
+
+.exclusive-section .discount h1{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 750px;
+    top: 1600px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: #fa7436;
+
+} 
+
+
+.exclusive-section .discount p{
+    position: absolute; 
+    display: flex; 
+    height: 64px;
+    width: 482px;
+    align-items: center;
+    justify-content: center;
+    left: 665px;
+    top: 1685px;
+    font-family: "poppins",sans-serif;
+    font-size: small;
+    color:#666666;
+}
+
+.cardimg1{
+    position: absolute;
+    display: flex;
+    height: 340px;
+    width: 270px;
+    top: 1805px;
+    left: 475px;
+
+}
+
+.cardingimg2{
+    position: absolute;
+    display: flex;
+    height: 467px;
+    width: 270px;
+    top: 1754px;
+    left: 645px;
+}
+
+.cardingimg3{
+    position: absolute;
+    display: flex;
+    height: 340px;
+    width: 270px;
+    top: 1805px;
+    left: 943px;
+
+}
+
+.cardingimg4{
+    position: absolute;
+    display: flex;
+    height: 340px;
+    width: 270px;
+    top: 1805px;
+    left: 1177px;
+
+}
+
+.slider-btn{
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 104px;
+    top: 2200px;
+    left: 875px;
+
+}
+
+
+/* <!-- vaction-section --> */
+
+.vaction-section{ 
+     background: #FEFCFB;
+     height: 100vh;
+     width:100%;
+}
+
+
+.vaction-section .vaction h1{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 530px;
+    top: 2430px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.vaction-section .vaction p{
+    position: absolute; 
+    display: flex; 
+    height: 64px;
+    width: 482px;
+    align-items: center;
+    justify-content: center;
+    left: 665px;
+    top: 2490px;
+    font-family: "poppins",sans-serif;
+    font-size: small;
+    color:#666666;
+}
+
+.vaction-section .plane h1{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 695px;
+    top: 2430px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: #fa7436;
+}
+
+.vaction-section .plane p{
+    position: absolute; 
+    display: flex; 
+    height: 64px;
+    width: 482px;
+    align-items: center;
+    justify-content: center;
+    left: 665px;
+    top: 2515px;
+    font-family: "poppins",sans-serif;
+    font-size: small;
+    color:#666666;
+}
+
+.element{
+    position: absolute;
+    display: flex;
+    height:81px ;
+    width:105.51px ;
+    top: 2460px;
+    left: 1110px ;
+}
+
+.forward{
+    position: absolute;
+    display: flex;
+    height:40px ;
+    width:112px ;
+    top: 2590px;
+    left: 1320px ;
+}
+
+
+/* <!-- card-section --> */
+
+.card-img1{
+    position: absolute;
+    display: flex;
+    height: 420px;
+    width: 320px;
+    top: 2660px;
+    left: 385px;
+}
+
+.card-img2{
+    position: absolute;
+    display: flex;
+    height: 502px;
+    width: 270px;
+    top: 2608px;
+    left: 720px;
+}
+
+.card-img3{
+    position: absolute;
+    display: flex;
+    height: 370px;
+    width: 320px;
+    top: 2660px;
+    left: 1120px;
+}
+
+
+/* <!-- about-section --> */
+
+.about-section{
+    background: #F7F8FC;
+    height: 596PX;
+    width:100%;
+}
+
+.about-section .about h1{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 350px;
+    top: 3210px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.about-section .about p{
+    position: absolute; 
+    display: flex; 
+    height: 64px;
+    width: 482px;
+    align-items: center;
+    justify-content: center;
+    left: 400px;
+    top: 3320px;
+    font-family: "poppins",sans-serif;
+    font-size: small;
+    color:#666666;
+    
+}
+
+.about-section .Client h1{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 285px;
+    top: 3250px;
+    font-family: "ralwey",sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    color: #fa7436;
+    
+}
+
+.about-section .newtn img{
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 112px;
+    top: 3420px;
+    left: 465px;
+
+}
+
+
+.fiveth-section .scrach-card2 img{
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width: 541px;
+    top: 3320px;
+    left: 925px;
+} 
+
+.gem-card img{
+    position: absolute;
+    display: flex;
+    height: 450px;
+    width: 590px;
+    top: 3225px;
+    left: 850px;
+} 
+
+.fiveth-section .scrach-card3 img{
+    position: absolute;
+    display: flex;
+    height: 188.06px;
+    width: 168.06px;
+    top: 3170px;
+    left: 1370px;
+}
+
+/* <!-- blog-section --> */
+
+.blog-section{
+    background: #FEFCFB;
+    height: 805PX;
+    width:100%;
+}
+
+.update{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 540px;
+    top: 3820px;
+    font-family: "ralwey",sans-serif;
+    font-size: large;
+    font-weight: 800; 
+}
+
+.latest{
+    position: absolute; 
+    display: flex; 
+    height: 54px;
+    width: 521px;
+    align-items: center;
+    justify-content: center;
+    left: 775px;
+    top: 3820px;
+    font-family: "ralwey",sans-serif;
+    font-size: large;
+    font-weight: 800;
+    color: #fa7436; 
+}
+
+.glass-section {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    left:400px ;
+    bottom: 550px;
+
+} 
+
+.glass-section img{
+    height: 388px;
+    width: 250px;
+
+}
+
+.round-point img{
+    position: relative;
+    display: flex;
+    height: 12px;
+    width: 40px;
+    left:900px ;
+    bottom: 513px;
+
+}
+
+
+
+/* <!-- footer-section --> */
+
+ .finish-section{
+    height: 80vh;
+    width:100%;
+} 
+
+ .finish-section .fainel{
+    position: absolute;
+    display: flex;
+    height: 316px;
+    width: 1200px;
+    left: 400px;
+    top: 4517px;
+
+}
+
+.fainel img{
+    height: 316px;
+    width: 1050px;
+
+
+}
+
+.last-book h2{
+    position: absolute;
+    display: flex;
+    height: 101px;
+    width: 24px;
+    font-size: larger;
+    font-weight: bold;
+    left: 400px;
+    top: 4920px; 
+}
+
+ .last-icon img{
+    position: absolute;
+    display: flex;
+    height: 19px;
+    width: 19px;
+    left: 488px;
+    top: 4938px;
+
+} 
+
+.social img{
+    position: absolute;
+    display: flex;
+    height: 55px;
+    width: 176px;
+    left: 394px;
+    top: 5043px;
+
+}
+
+.note p{
+    position: absolute;
+    display: flex;
+    font-size: small;
+    color: #666666;
+    left: 558px;
+    top: 5000px; 
+    
+}
+
+.company{
+    position: absolute;
+    color: #666666;
+    left: 888px;
+    top: 4920px; 
+
+
+}
+
+.company h2{
+    color: #222222;
+}
+
+.Contact{
+    position: absolute;
+    color: #666666;
+    left: 1150px;
+    top: 4920px;
+}
+
+
+.Contact h2{
+    color: #222222;
+}
+
+.More{
+    position: absolute;
+    color: #666666;
+    left:1350px ;
+    top: 4920px;
+}
+
+.More h2{
+    color: #222222;
+}
+
+.border img{
+    position: absolute;
+    width: 1050px;
+    top: 5170px;
+    left: 400px;
+
+}
+
+.fainel-para{
+    position: absolute;
+    display: flex;
+    top: 5200px;
+    gap: 550px;
+    left: 400px;
+}
+
+.fainel-para p{
+    color: #666666;
+    
+}
+
+
+
+ 
